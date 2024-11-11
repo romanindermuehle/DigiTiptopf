@@ -13,12 +13,12 @@ class Recipe {
     var name: String
     var ingredients: [String]
     var preparation: [String]
-    @Attribute(.externalStorage) var photo: Data?
+    @Attribute(.externalStorage) var image: Data?
     
-    init(name: String, ingredients: [String], preparation: [String], photo: Data? = nil) {
+    init(name: String, ingredients: [String], preparation: [String], image: Data? = nil) {
         self.name = name
         self.ingredients = ingredients
         self.preparation = preparation
-        self.photo = photo
+        self.image = image
     }
 }
