@@ -11,11 +11,11 @@ import Foundation
 @Model
 class Recipe {
     var name: String
-    var ingredients: [String]
-    var preparation: [String]
+    var ingredients: [Ingredient]
+    var preparation: [Step]
     @Attribute(.externalStorage) var image: Data?
     
-    init(name: String, ingredients: [String], preparation: [String], image: Data? = nil) {
+    init(name: String, ingredients: [Ingredient], preparation: [Step], image: Data? = nil) {
         self.name = name
         self.ingredients = ingredients
         self.preparation = preparation

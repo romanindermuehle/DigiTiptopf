@@ -10,9 +10,9 @@ import SwiftUI
 import SwiftData
 
 @MainActor let sampleRecipe: [Recipe] = [
-    Recipe(name: "Pizza", ingredients: ["Tomato", "Cheese", "Ham"], preparation: ["Mix all ingredients", "Bake in oven"], image: UIImage(resource: .pizza).jpegData(compressionQuality: 1)),
-    Recipe(name: "Donut", ingredients: ["Flour", "Sugar", "Eggs"], preparation: ["Mix all ingredients", "Bake in oven"], image: UIImage(resource: .donuts).jpegData(compressionQuality: 1)),
-    Recipe(name: "Cake", ingredients: ["Flour", "Sugar", "Eggs"], preparation: ["Mix all ingredients", "Bake in oven"])
+    Recipe(name: "Pizza", ingredients: [Ingredient(name: "Tomato"), Ingredient(name: "Cheese")], preparation: [Step(name: "Mix all ingredients"), Step(name: "Bake in oven")], image: UIImage(resource: .pizza).jpegData(compressionQuality: 1)),
+    Recipe(name: "Donut", ingredients: [Ingredient(name: "Flour"), Ingredient(name: "Sugar"), Ingredient(name: "Eggs")], preparation: [Step(name: "Mix all ingredients"), Step(name: "Bake in oven")], image: UIImage(resource: .donuts).jpegData(compressionQuality: 1)),
+    Recipe(name: "Cake", ingredients: [Ingredient(name: "Flour"), Ingredient(name: "Sugar"), Ingredient(name: "Eggs")], preparation: [Step(name: "Mix all ingredients"), Step(name: "Bake in oven")])
 ]
 
 struct SampleRecipeData: PreviewModifier {

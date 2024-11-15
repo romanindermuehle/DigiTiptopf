@@ -6,6 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CBE7910D2CE72BC700DF1317 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE791032CE72BC700DF1317 /* Preview Assets.xcassets */; };
+		CBE7910E2CE72BC700DF1317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE791092CE72BC700DF1317 /* Assets.xcassets */; };
+		CBE791102CE72BC700DF1317 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790F12CE72BC700DF1317 /* ContentView.swift */; };
+		CBE791112CE72BC700DF1317 /* DigiTiptopfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790F22CE72BC700DF1317 /* DigiTiptopfApp.swift */; };
+		CBE791122CE72BC700DF1317 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790F42CE72BC700DF1317 /* RecipeDetailView.swift */; };
+		CBE791132CE72BC700DF1317 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790F52CE72BC700DF1317 /* RecipeListView.swift */; };
+		CBE791142CE72BC700DF1317 /* RecipeModifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790F62CE72BC700DF1317 /* RecipeModifyView.swift */; };
+		CBE791152CE72BC700DF1317 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790F82CE72BC700DF1317 /* SettingsView.swift */; };
+		CBE791162CE72BC700DF1317 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790FB2CE72BC700DF1317 /* Ingredient.swift */; };
+		CBE791172CE72BC700DF1317 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790FC2CE72BC700DF1317 /* Recipe.swift */; };
+		CBE791182CE72BC700DF1317 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790FD2CE72BC700DF1317 /* Step.swift */; };
+		CBE791192CE72BC700DF1317 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790FE2CE72BC700DF1317 /* User.swift */; };
+		CBE7911A2CE72BC700DF1317 /* SampleRecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE791002CE72BC700DF1317 /* SampleRecipeData.swift */; };
+		CBE7911B2CE72BC700DF1317 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE791052CE72BC700DF1317 /* Camera.swift */; };
+		CBE7911C2CE72BC700DF1317 /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE791062CE72BC700DF1317 /* RecipeCard.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CB5AD26B2CDE336400F7A6CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +45,26 @@
 		CB5AD2592CDE336300F7A6CE /* DigiTiptopf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiTiptopf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5AD26A2CDE336400F7A6CE /* DigiTiptopfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigiTiptopfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5AD2742CDE336400F7A6CE /* DigiTiptopfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigiTiptopfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE790F12CE72BC700DF1317 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CBE790F22CE72BC700DF1317 /* DigiTiptopfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiTiptopfApp.swift; sourceTree = "<group>"; };
+		CBE790F42CE72BC700DF1317 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		CBE790F52CE72BC700DF1317 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
+		CBE790F62CE72BC700DF1317 /* RecipeModifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModifyView.swift; sourceTree = "<group>"; };
+		CBE790F82CE72BC700DF1317 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CBE790FB2CE72BC700DF1317 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		CBE790FC2CE72BC700DF1317 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		CBE790FD2CE72BC700DF1317 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		CBE790FE2CE72BC700DF1317 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CBE791002CE72BC700DF1317 /* SampleRecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRecipeData.swift; sourceTree = "<group>"; };
+		CBE791032CE72BC700DF1317 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBE791052CE72BC700DF1317 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		CBE791062CE72BC700DF1317 /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
+		CBE791092CE72BC700DF1317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBE7910A2CE72BC700DF1317 /* DigiTiptopf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DigiTiptopf.entitlements; sourceTree = "<group>"; };
+		CBE7910B2CE72BC700DF1317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CB5AD25B2CDE336300F7A6CE /* DigiTiptopf */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DigiTiptopf;
-			sourceTree = "<group>";
-		};
 		CB5AD26D2CDE336400F7A6CE /* DigiTiptopfTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DigiTiptopfTests;
@@ -75,7 +105,7 @@
 		CB5AD2502CDE336300F7A6CE = {
 			isa = PBXGroup;
 			children = (
-				CB5AD25B2CDE336300F7A6CE /* DigiTiptopf */,
+				CBE7910C2CE72BC700DF1317 /* DigiTiptopf */,
 				CB5AD26D2CDE336400F7A6CE /* DigiTiptopfTests */,
 				CB5AD2772CDE336400F7A6CE /* DigiTiptopfUITests */,
 				CB5AD25A2CDE336300F7A6CE /* Products */,
@@ -92,6 +122,110 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CBE790F32CE72BC700DF1317 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CBE790F12CE72BC700DF1317 /* ContentView.swift */,
+				CBE790F22CE72BC700DF1317 /* DigiTiptopfApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CBE790F72CE72BC700DF1317 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				CBE790F42CE72BC700DF1317 /* RecipeDetailView.swift */,
+				CBE790F52CE72BC700DF1317 /* RecipeListView.swift */,
+				CBE790F62CE72BC700DF1317 /* RecipeModifyView.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		CBE790F92CE72BC700DF1317 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CBE790F82CE72BC700DF1317 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CBE790FA2CE72BC700DF1317 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CBE790F32CE72BC700DF1317 /* Main */,
+				CBE790F72CE72BC700DF1317 /* Recipe */,
+				CBE790F92CE72BC700DF1317 /* Settings */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CBE790FF2CE72BC700DF1317 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				CBE790FB2CE72BC700DF1317 /* Ingredient.swift */,
+				CBE790FC2CE72BC700DF1317 /* Recipe.swift */,
+				CBE790FD2CE72BC700DF1317 /* Step.swift */,
+				CBE790FE2CE72BC700DF1317 /* User.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		CBE791012CE72BC700DF1317 /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				CBE791002CE72BC700DF1317 /* SampleRecipeData.swift */,
+			);
+			path = SampleData;
+			sourceTree = "<group>";
+		};
+		CBE791022CE72BC700DF1317 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CBE790FF2CE72BC700DF1317 /* DataModels */,
+				CBE791012CE72BC700DF1317 /* SampleData */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CBE791042CE72BC700DF1317 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CBE791032CE72BC700DF1317 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBE791072CE72BC700DF1317 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				CBE791052CE72BC700DF1317 /* Camera.swift */,
+				CBE791062CE72BC700DF1317 /* RecipeCard.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		CBE791082CE72BC700DF1317 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CBE791072CE72BC700DF1317 /* UIComponents */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CBE7910C2CE72BC700DF1317 /* DigiTiptopf */ = {
+			isa = PBXGroup;
+			children = (
+				CBE790FA2CE72BC700DF1317 /* App */,
+				CBE791022CE72BC700DF1317 /* Common */,
+				CBE791042CE72BC700DF1317 /* Preview Content */,
+				CBE791082CE72BC700DF1317 /* Utils */,
+				CBE791092CE72BC700DF1317 /* Assets.xcassets */,
+				CBE7910A2CE72BC700DF1317 /* DigiTiptopf.entitlements */,
+				CBE7910B2CE72BC700DF1317 /* Info.plist */,
+			);
+			path = DigiTiptopf;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +240,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CB5AD25B2CDE336300F7A6CE /* DigiTiptopf */,
 			);
 			name = DigiTiptopf;
 			packageProductDependencies = (
@@ -212,6 +343,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE7910D2CE72BC700DF1317 /* Preview Assets.xcassets in Resources */,
+				CBE7910E2CE72BC700DF1317 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +369,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE791102CE72BC700DF1317 /* ContentView.swift in Sources */,
+				CBE791112CE72BC700DF1317 /* DigiTiptopfApp.swift in Sources */,
+				CBE791122CE72BC700DF1317 /* RecipeDetailView.swift in Sources */,
+				CBE791132CE72BC700DF1317 /* RecipeListView.swift in Sources */,
+				CBE791142CE72BC700DF1317 /* RecipeModifyView.swift in Sources */,
+				CBE791152CE72BC700DF1317 /* SettingsView.swift in Sources */,
+				CBE791162CE72BC700DF1317 /* Ingredient.swift in Sources */,
+				CBE791172CE72BC700DF1317 /* Recipe.swift in Sources */,
+				CBE791182CE72BC700DF1317 /* Step.swift in Sources */,
+				CBE791192CE72BC700DF1317 /* User.swift in Sources */,
+				CBE7911A2CE72BC700DF1317 /* SampleRecipeData.swift in Sources */,
+				CBE7911B2CE72BC700DF1317 /* Camera.swift in Sources */,
+				CBE7911C2CE72BC700DF1317 /* RecipeCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +542,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigiTiptopf/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires your camera to take a picture.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -435,6 +583,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigiTiptopf/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires your camera to take a picture.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
