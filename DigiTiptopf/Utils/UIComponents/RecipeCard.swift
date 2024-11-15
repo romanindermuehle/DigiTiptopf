@@ -12,7 +12,7 @@ struct RecipeCard: View {
     let recipeName: String
     
     var body: some View {
-        ZStack(alignment: .bottom) {
+        VStack {
             if let imageData {
                 if let uIImage = UIImage(data: imageData) {
                     Image(uiImage: uIImage)
@@ -29,7 +29,9 @@ struct RecipeCard: View {
                             .scaledToFill()
                     }
             }
-            
+        }
+        .frame(width: 180, height: 150)
+        .overlay(alignment: .bottom) {
             Text(recipeName)
                 .font(.title)
                 .fontWeight(.bold)
@@ -37,7 +39,6 @@ struct RecipeCard: View {
                 .frame(width: 200, height: 50)
                 .background(.ultraThinMaterial)
         }
-        .frame(width: 180, height: 150)
         .clipShape(RoundedRectangle(cornerRadius: 20))
     }
 }
