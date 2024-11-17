@@ -124,7 +124,7 @@ struct RecipeModifyView: View {
         }
         .fullScreenCover(isPresented: $isShowingCamera) {
             CameraView(image: $capturedImage, isPresented: $isShowingCamera)
-                   }
+        }
         .photosPicker(isPresented: $isPhotoPickerShowing, selection: $selectedPhoto, matching: .images, photoLibrary: .shared())
         .onChange(of: selectedPhoto) {
             Task {
@@ -146,6 +146,7 @@ struct RecipeModifyView: View {
                     saveRecipe()
                     dismiss()
                 }
+                .disabled(name.isEmpty)
                 .fontWeight(.semibold)
             }
         }

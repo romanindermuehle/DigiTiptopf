@@ -13,12 +13,12 @@ func createPDF(recipe: Recipe, listStyle: String) -> URL? {
     let pageSize = CGSize(width: 595.2, height: 841.8) // A4-Größe in Punkten (72 DPI)
     
     let recipePDFView = RecipePDFView(recipe: recipe, listStyle: listStyle)
-            .frame(width: pageSize.width, height: pageSize.height)
-            .background(Color.white)
+        .frame(width: pageSize.width, height: pageSize.height)
+        .background(Color.white)
     
     let renderer = ImageRenderer(content: recipePDFView)
     renderer.scale = 1.0
-
+    
     let documentsURL = FileManager.default.temporaryDirectory
     let pdfName = "\(recipe.name)_\(Date().formatted(date: .abbreviated, time: .omitted)).pdf"
     let pdfURL = documentsURL.appendingPathComponent(pdfName)
