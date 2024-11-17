@@ -20,13 +20,14 @@ struct RecipeCard: View {
                         .scaledToFill()
                 }
             } else {
-                Rectangle()
-                    .fill(.accent)
+                Color.accent
                     .overlay {
                         Image(systemName: "frying.pan")
                             .resizable()
-                            .frame(width: 100, height: 100, alignment: .center)
+                            .frame(width: 120, height: 80, alignment: .center)
                             .scaledToFill()
+                            .foregroundStyle(.black)
+                            .padding(.bottom, 35)
                     }
             }
         }
