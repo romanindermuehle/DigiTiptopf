@@ -21,4 +21,14 @@ class Recipe {
         self.preparation = preparation
         self.image = image
     }
+    
+    func toDTO() -> RecipeDTO {
+        .init(name: name, ingredients: ingredients.map { $0.name }, preparation: preparation.map { $0.name })
+    }
+}
+
+struct RecipeDTO: Codable {
+    var name: String
+    var ingredients: [String]
+    var preparation: [String]
 }

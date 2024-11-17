@@ -22,6 +22,9 @@
 		CBE7911A2CE72BC700DF1317 /* SampleRecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE791002CE72BC700DF1317 /* SampleRecipeData.swift */; };
 		CBE7911B2CE72BC700DF1317 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE791052CE72BC700DF1317 /* Camera.swift */; };
 		CBE7911C2CE72BC700DF1317 /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE791062CE72BC700DF1317 /* RecipeCard.swift */; };
+		CBE7911F2CE7800200DF1317 /* RecipeJSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7911E2CE7800200DF1317 /* RecipeJSONFile.swift */; };
+		CBE791212CE897B300DF1317 /* CreatePDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE791202CE897B300DF1317 /* CreatePDF.swift */; };
+		CBE791242CEA6DE300DF1317 /* RecipePDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE791232CEA6DE300DF1317 /* RecipePDFView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		CBE791092CE72BC700DF1317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBE7910A2CE72BC700DF1317 /* DigiTiptopf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DigiTiptopf.entitlements; sourceTree = "<group>"; };
 		CBE7910B2CE72BC700DF1317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBE7911E2CE7800200DF1317 /* RecipeJSONFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeJSONFile.swift; sourceTree = "<group>"; };
+		CBE791202CE897B300DF1317 /* CreatePDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePDF.swift; sourceTree = "<group>"; };
+		CBE791232CEA6DE300DF1317 /* RecipePDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePDFView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -181,6 +187,7 @@
 		CBE791022CE72BC700DF1317 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CBE7911D2CE77F9A00DF1317 /* Export */,
 				CBE790FF2CE72BC700DF1317 /* DataModels */,
 				CBE791012CE72BC700DF1317 /* SampleData */,
 			);
@@ -224,6 +231,24 @@
 				CBE7910B2CE72BC700DF1317 /* Info.plist */,
 			);
 			path = DigiTiptopf;
+			sourceTree = "<group>";
+		};
+		CBE7911D2CE77F9A00DF1317 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				CBE791222CEA6DAE00DF1317 /* RecipePDF */,
+				CBE7911E2CE7800200DF1317 /* RecipeJSONFile.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		CBE791222CEA6DAE00DF1317 /* RecipePDF */ = {
+			isa = PBXGroup;
+			children = (
+				CBE791202CE897B300DF1317 /* CreatePDF.swift */,
+				CBE791232CEA6DE300DF1317 /* RecipePDFView.swift */,
+			);
+			path = RecipePDF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,12 +397,15 @@
 				CBE791102CE72BC700DF1317 /* ContentView.swift in Sources */,
 				CBE791112CE72BC700DF1317 /* DigiTiptopfApp.swift in Sources */,
 				CBE791122CE72BC700DF1317 /* RecipeDetailView.swift in Sources */,
+				CBE7911F2CE7800200DF1317 /* RecipeJSONFile.swift in Sources */,
 				CBE791132CE72BC700DF1317 /* RecipeListView.swift in Sources */,
 				CBE791142CE72BC700DF1317 /* RecipeModifyView.swift in Sources */,
 				CBE791152CE72BC700DF1317 /* SettingsView.swift in Sources */,
 				CBE791162CE72BC700DF1317 /* Ingredient.swift in Sources */,
 				CBE791172CE72BC700DF1317 /* Recipe.swift in Sources */,
+				CBE791212CE897B300DF1317 /* CreatePDF.swift in Sources */,
 				CBE791182CE72BC700DF1317 /* Step.swift in Sources */,
+				CBE791242CEA6DE300DF1317 /* RecipePDFView.swift in Sources */,
 				CBE791192CE72BC700DF1317 /* User.swift in Sources */,
 				CBE7911A2CE72BC700DF1317 /* SampleRecipeData.swift in Sources */,
 				CBE7911B2CE72BC700DF1317 /* Camera.swift in Sources */,
