@@ -19,10 +19,10 @@ struct RecipeListView: View {
     var body: some View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
-                LazyVGrid(columns: columns) {
+                LazyVGrid(columns: columns, spacing: 18) {
                     ForEach(recipes) { recipe in
                         NavigationLink {
-                            RecipeDetailView()
+                            RecipeDetailView(recipe: recipe, listStyle: users.first?.listStyle ?? "list")
                                 .navigationTransition(.zoom(sourceID: recipe.id, in: animation))
                         } label: {
                             RecipeCard(imageData: recipe.image, recipeName: recipe.name)
