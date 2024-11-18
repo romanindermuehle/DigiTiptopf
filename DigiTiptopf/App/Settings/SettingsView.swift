@@ -31,7 +31,7 @@ struct SettingsView: View {
                 }
                 
                 Section("Contact & Support") {
-                    if let url = createMailtoReportURL() {
+                    if let url = createMailtoFeedbackURL() {
                         Link(destination: url) {
                             Label("Contact", systemImage: "envelope")
                         }
@@ -54,8 +54,8 @@ struct SettingsView: View {
         }
     }
     
-    func createMailtoReportURL() -> URL? {
-        let email = "contact@romanindermuehle.ch"
+    func createMailtoFeedbackURL() -> URL? {
+        let email = "rin140613@stud.gibb.ch"
         let subject = "DigiTiptopf - Feedback"
         let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown"
         let buildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "Unknown"
