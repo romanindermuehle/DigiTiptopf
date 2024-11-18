@@ -19,54 +19,54 @@ struct RecipeDetailView: View {
     
     var body: some View {
         VStack {
-            if let imageData = recipe.image, let uiImage = UIImage(data: imageData) {
-                GeometryReader { geometry in
-                    VStack {
+            GeometryReader { geometry in
+                VStack {
+                    if let imageData = recipe.image, let uiImage = UIImage(data: imageData) {
                         Image(uiImage: uiImage)
                             .resizable()
                             .scaledToFill()
                             .frame(width: geometry.size.width * 0.9, height: 250)
                             .clipShape(RoundedRectangle(cornerRadius: 12))
-                        
-                        GroupBox(label:
-                                    Label("Ingredients:", systemImage: "list.bullet.rectangle")
-                        ) {
-                            VStack(alignment: .leading) {
-                                ForEach(recipe.ingredients, id: \.id) { ingredient in
-                                    Text(ingredient.name)
-                                    
-                                }
+                    }
+                    
+                    GroupBox(label:
+                                Label("Ingredients:", systemImage: "list.bullet.rectangle")
+                    ) {
+                        VStack(alignment: .leading) {
+                            ForEach(recipe.ingredients, id: \.id) { ingredient in
+                                Text(ingredient.name)
+                                
                             }
                         }
-                        .padding()
-                        
-                        GroupBox(label:
-                                    Label("preparation:", systemImage: "list.number")
-                        ) {
-                            VStack(alignment: .leading) {
-                                ForEach(Array(recipe.preparation.enumerated()), id: \.element) { index, step in
-                                    if listStyle == .list {
-                                        HStack {
-                                            Circle()
-                                                .fill(Color.accentColor)
-                                                .frame(width: 38, height: 38)
-                                                .overlay {
-                                                    Text("\(index)")
-                                                        .fontWeight(.bold)
-                                                        .foregroundStyle(.white)
-                                                }
-                                            Text(step.name)
-                                        }
-                                    } else if listStyle == .flowText {
+                    }
+                    .padding()
+                    
+                    GroupBox(label:
+                                Label("Preparation:", systemImage: "list.number")
+                    ) {
+                        VStack(alignment: .leading) {
+                            ForEach(Array(recipe.preparation.enumerated()), id: \.element) { index, step in
+                                if listStyle == .list {
+                                    HStack {
+                                        Circle()
+                                            .fill(Color.accentColor)
+                                            .frame(width: 38, height: 38)
+                                            .overlay {
+                                                Text("\(index)")
+                                                    .fontWeight(.bold)
+                                                    .foregroundStyle(.white)
+                                            }
                                         Text(step.name)
                                     }
+                                } else if listStyle == .flowText {
+                                    Text(step.name)
                                 }
                             }
                         }
-                        .padding()
                     }
-                    .frame(width: geometry.size.width)
+                    .padding()
                 }
+                .frame(width: geometry.size.width)
             }
         }
         .navigationTitle(recipe.name)
