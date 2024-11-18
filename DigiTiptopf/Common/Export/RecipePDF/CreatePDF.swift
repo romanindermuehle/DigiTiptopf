@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 @MainActor
-func createPDF(recipe: Recipe, listStyle: String) -> URL? {
+func createPDF(recipe: Recipe, listStyle: ListStyle) -> URL? {
     let pageSize = CGSize(width: 595.2, height: 841.8) // A4-Größe in Punkten (72 DPI)
     
     let recipePDFView = RecipePDFView(recipe: recipe, listStyle: listStyle)

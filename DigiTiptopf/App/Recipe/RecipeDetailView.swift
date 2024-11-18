@@ -12,7 +12,7 @@ struct RecipeDetailView: View {
     @Environment(\.modelContext) var context
     @Environment(\.dismiss) var dismiss
     let recipe: Recipe
-    let listStyle: String
+    let listStyle: ListStyle
     @State private var pdfURL: URL?
     
     @State private var showingExporter: Bool = false
@@ -45,7 +45,7 @@ struct RecipeDetailView: View {
                         ) {
                             VStack(alignment: .leading) {
                                 ForEach(Array(recipe.preparation.enumerated()), id: \.element) { index, step in
-                                    if listStyle == "list" {
+                                    if listStyle == .list {
                                         HStack {
                                             Circle()
                                                 .fill(Color.accentColor)
@@ -57,7 +57,7 @@ struct RecipeDetailView: View {
                                                 }
                                             Text(step.name)
                                         }
-                                    } else {
+                                    } else if listStyle == .flowText {
                                         Text(step.name)
                                     }
                                 }
@@ -123,5 +123,5 @@ struct RecipeDetailView: View {
 #Preview() {
     let recipe = sampleRecipes.first!
     
-    RecipeDetailView(recipe: recipe, listStyle: "list")
+    RecipeDetailView(recipe: recipe, listStyle: ListStyle.list)
 }

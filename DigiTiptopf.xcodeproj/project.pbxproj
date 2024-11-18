@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB97A8B82CEB0F7600A323CE /* ListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB97A8B72CEB0F7600A323CE /* ListStyle.swift */; };
+		CB97A8BA2CEB22B700A323CE /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB97A8B92CEB22B700A323CE /* AppInfo.swift */; };
 		CBE7910D2CE72BC700DF1317 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE791032CE72BC700DF1317 /* Preview Assets.xcassets */; };
 		CBE7910E2CE72BC700DF1317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE791092CE72BC700DF1317 /* Assets.xcassets */; };
 		CBE791102CE72BC700DF1317 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790F12CE72BC700DF1317 /* ContentView.swift */; };
@@ -48,6 +50,8 @@
 		CB5AD2592CDE336300F7A6CE /* DigiTiptopf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiTiptopf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5AD26A2CDE336400F7A6CE /* DigiTiptopfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigiTiptopfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5AD2742CDE336400F7A6CE /* DigiTiptopfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigiTiptopfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB97A8B72CEB0F7600A323CE /* ListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStyle.swift; sourceTree = "<group>"; };
+		CB97A8B92CEB22B700A323CE /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		CBE790F12CE72BC700DF1317 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBE790F22CE72BC700DF1317 /* DigiTiptopfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiTiptopfApp.swift; sourceTree = "<group>"; };
 		CBE790F42CE72BC700DF1317 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
@@ -126,6 +130,14 @@
 				CB5AD2742CDE336400F7A6CE /* DigiTiptopfUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CB97A8B62CEB0F6A00A323CE /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				CB97A8B72CEB0F7600A323CE /* ListStyle.swift */,
+			);
+			path = Enumerations;
 			sourceTree = "<group>";
 		};
 		CBE790F32CE72BC700DF1317 /* Main */ = {
@@ -207,6 +219,7 @@
 			children = (
 				CBE791052CE72BC700DF1317 /* Camera.swift */,
 				CBE791062CE72BC700DF1317 /* RecipeCard.swift */,
+				CB97A8B92CEB22B700A323CE /* AppInfo.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -214,6 +227,7 @@
 		CBE791082CE72BC700DF1317 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CB97A8B62CEB0F6A00A323CE /* Enumerations */,
 				CBE791072CE72BC700DF1317 /* UIComponents */,
 			);
 			path = Utils;
@@ -396,6 +410,7 @@
 			files = (
 				CBE791102CE72BC700DF1317 /* ContentView.swift in Sources */,
 				CBE791112CE72BC700DF1317 /* DigiTiptopfApp.swift in Sources */,
+				CB97A8B82CEB0F7600A323CE /* ListStyle.swift in Sources */,
 				CBE791122CE72BC700DF1317 /* RecipeDetailView.swift in Sources */,
 				CBE7911F2CE7800200DF1317 /* RecipeJSONFile.swift in Sources */,
 				CBE791132CE72BC700DF1317 /* RecipeListView.swift in Sources */,
@@ -410,6 +425,7 @@
 				CBE7911A2CE72BC700DF1317 /* SampleRecipeData.swift in Sources */,
 				CBE7911B2CE72BC700DF1317 /* Camera.swift in Sources */,
 				CBE7911C2CE72BC700DF1317 /* RecipeCard.swift in Sources */,
+				CB97A8BA2CEB22B700A323CE /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

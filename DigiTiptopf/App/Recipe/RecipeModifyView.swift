@@ -13,7 +13,7 @@ struct RecipeModifyView: View {
     @Environment(\.modelContext) var context
     @Environment(\.dismiss) var dismiss
     @Binding var recipe: Recipe?
-    let listStyle: String
+    let listStyle: ListStyle
     
     @FocusState private var focusedIngredient: PersistentIdentifier?
     @FocusState private var focusedStep: PersistentIdentifier?
@@ -37,7 +37,7 @@ struct RecipeModifyView: View {
             }
             
             Section("Ingredients") {
-                if listStyle == "list" {
+                if listStyle == .list {
                     ForEach($ingredients, id: \.id) { $ingredient in
                         TextField("Ingredient", text: $ingredient.name)
                             .onSubmit { addIngredient() }
@@ -52,13 +52,13 @@ struct RecipeModifyView: View {
                             Text("Add Ingredient")
                         }
                     }
-                } else if listStyle == "flowText" {
+                } else if listStyle == .flowText {
                     TextEditor(text: $ingredients[0].name)
                 }
             }
             
             Section("Preparation") {
-                if listStyle == "list" {
+                if listStyle == .list {
                     ForEach($preparation, id: \.id) { $step in
                         TextField("Step", text: $step.name)
                             .onSubmit { addStep() }
@@ -73,7 +73,7 @@ struct RecipeModifyView: View {
                             Text("Add Step")
                         }
                     }
-                } else if listStyle == "flowText" {
+                } else if listStyle == .flowText {
                     TextEditor(text: $preparation[0].name)
                 }
             }
@@ -194,5 +194,5 @@ struct RecipeModifyView: View {
 }
 
 #Preview {
-    RecipeModifyView(recipe: .constant(nil), listStyle: "list", name: "", ingredients: [], preparation: [], isEditing: false)
+    RecipeModifyView(recipe: .constant(nil), listStyle: ListStyle.list, name: "", ingredients: [], preparation: [], isEditing: false)
 }

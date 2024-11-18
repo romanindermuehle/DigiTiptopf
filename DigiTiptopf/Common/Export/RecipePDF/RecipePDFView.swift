@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RecipePDFView: View {
     var recipe: Recipe
-    var listStyle: String
+    var listStyle: ListStyle
     
     var body: some View {
         VStack(alignment: .center) {

@@ -10,9 +10,9 @@ import Foundation
 
 @Model
 class User {
-    var listStyle: String
+    var listStyle: ListStyle
     
-    init(listStyle: String) {
+    init(listStyle: ListStyle) {
         self.listStyle = listStyle
     }
 }
