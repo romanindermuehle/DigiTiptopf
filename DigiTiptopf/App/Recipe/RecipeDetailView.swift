@@ -70,6 +70,7 @@ struct RecipeDetailView: View {
             }
         }
         .navigationTitle(recipe.name)
+        .toolbar(.hidden, for: .tabBar)
         .toolbar {
             ToolbarItemGroup(placement: .topBarTrailing) {
                 Menu {
@@ -78,6 +79,7 @@ struct RecipeDetailView: View {
                             ShareLink(item: pdfURL) {
                                 Label("Share as PDF", systemImage: "square.and.arrow.up")
                             }
+                            .accessibilityIdentifier("sharePDFButton")
                         } else {
                             Text("PDF will be created...")
                                 .onAppear {
@@ -107,9 +109,10 @@ struct RecipeDetailView: View {
                 } label: {
                     Image(systemName: "ellipsis.circle")
                 }
+                .accessibilityIdentifier("menuButton")
             }
         }
-        .fileExporter(isPresented: $showingExporter, document: RecipeJSONFile(recipe: recipe.toDTO()), contentType: .json, defaultFilename: "\(recipe.name)_\(Date().formatted(date: .abbreviated, time: .omitted)).pdf") { result in
+        .fileExporter(isPresented: $showingExporter, document: RecipeJSONFile(recipe: recipe.toDTO()), contentType: .json, defaultFilename: "\(recipe.name)_\(Date().formatted(date: .abbreviated, time: .omitted))") { result in
             switch result {
             case .success(let url):
                 print("Exported to \(url)")

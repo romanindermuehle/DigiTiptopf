@@ -34,6 +34,7 @@ struct RecipeModifyView: View {
         Form {
             Section {
                 TextField("Recipe Name", text: $name)
+                    .accessibilityIdentifier("recipeName")
             }
             
             Section("Ingredients") {

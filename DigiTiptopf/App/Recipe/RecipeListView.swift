@@ -61,6 +61,7 @@ struct RecipeListView: View {
                                         Label("Edit Recipe", systemImage: "pencil")
                                     }
                                 }
+                                .accessibilityIdentifier(recipe.name)
                             }
                         }
                         .padding()
