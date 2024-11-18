@@ -47,6 +47,8 @@ struct SettingsView: View {
                 if users.isEmpty {
                     let user = User(listStyle: .list)
                     context.insert(user)
+                } else {
+                    selectedListStyle = users.first?.listStyle ?? ListStyle.list
                 }
             }
         }
