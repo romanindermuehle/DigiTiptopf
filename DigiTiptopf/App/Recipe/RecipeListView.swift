@@ -14,6 +14,8 @@ struct RecipeListView: View {
     @Environment(\.modelContext) var context
     @Namespace var animation
     
+    @State private var searchQuery: String = ""
+    
     let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
@@ -34,11 +36,11 @@ struct RecipeListView: View {
                         .foregroundStyle(.black)
                         
                     }
-
+                    
                 } else {
                     ScrollView(.vertical, showsIndicators: false) {
                         LazyVGrid(columns: columns, spacing: 18) {
-                            ForEach(recipes) { recipe in
+                            ForEach(filteredRecipes) { recipe in
                                 NavigationLink {
                                     RecipeDetailView(recipe: recipe, listStyle: users.first?.listStyle ?? ListStyle.list)
                                         .navigationTransition(.zoom(sourceID: recipe.id, in: animation))
@@ -60,10 +62,10 @@ struct RecipeListView: View {
                                     }
                                 }
                             }
-                            
                         }
                         .padding()
                     }
+                    .searchable(text: $searchQuery)
                 }
             }
             .navigationTitle("Recipes")
@@ -76,6 +78,14 @@ struct RecipeListView: View {
                     }
                 }
             }
+        }
+    }
+    
+    private var filteredRecipes: [Recipe] {
+        if searchQuery.isEmpty {
+            return recipes
+        } else {
+            return recipes.filter { $0.name.localizedCaseInsensitiveContains(searchQuery) }
         }
     }
 }
