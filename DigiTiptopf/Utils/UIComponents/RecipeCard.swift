@@ -37,7 +37,12 @@ struct RecipeCard: View {
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundStyle(.white)
-                .frame(width: 200, height: 50)
+                .lineLimit(1)
+                .truncationMode(.tail)
+                .containerRelativeFrame(.horizontal) { width, _ in
+                    width * 0.4
+                }
+                .padding(.horizontal, 10)
                 .background(.ultraThinMaterial)
         }
         .clipShape(RoundedRectangle(cornerRadius: 20))
